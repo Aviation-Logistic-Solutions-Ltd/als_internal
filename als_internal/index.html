@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
-    <title>ALS Internal Portal</title>
+    <title>ALS Workspace</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -13,36 +14,42 @@
     <div class="logo-container">
         <img src="logo.png" alt="Company Logo">
     </div>
-    <nav class="nav-links">
-        <a href="#">Dashboard</a>
-        <a href="#">Employee Directory</a>
-        <a href="#">Resources</a>
-        <a href="#">Announcements</a>
-        <a href="#">Support</a>
-    </nav>
-    <div class="menu-icon" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <nav class="nav-links-mobile" id="mobile-menu">
-        <a href="#">Dashboard</a>
-        <a href="#">Employee Directory</a>
-        <a href="#">Resources</a>
-        <a href="#">Announcements</a>
-        <a href="#">Support</a>
-    </nav>
+    <h1 class="header-title">ALS Workspace</h1>
 </header>
 
 <section class="dashboard">
-    <h1>Welcome to the ALS Internal Portal</h1>
-    <p>Your gateway to resources, tools, and announcements for our team.</p>
+    <h1>Good afternoon</h1>
+    <p class="time" id="time"></p>
     <div class="app-grid">
         <div class="app-card">
-            <img src="icons/app1.png" alt="App Icon">
-            <h3>HR Policies</h3>
-            <p>View and manage HR policies.</p>
+            <a href="https://docutrace.aviationpartners.ie/" target="_blank">
+            <img src="docutrace-logo.png" alt="DocuTrace Icon">
+            <h3>ALS DocuTrace</h3>
+            <p>Secure Aircraft Records Management Tool.</p>
+        </a>
         </div>
+
+        <div class="app-card">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/sharepoint" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/sharepoint_48x1.svg"
+                width="48"
+                height="48"
+                alt="SharePoint icon"
+              />
+                <h3>SharePoint</h3>
+                <p>Our Communication site.</p>
+            </a>
+        </div>
+
+        <div class="app-card">
+            <a href="https://chat.openai.com/" target="_blank">
+            <img src="chatgpt-icon.png" alt="App Icon">
+            <h3>ChatGPT</h3>
+            <p>AI-powered conversational assistant.</p>
+        </a> 
+    </div>
+<!-- 
         <div class="app-card">
             <img src="icons/app2.png" alt="App Icon">
             <h3>Helpdesk</h3>
@@ -62,13 +69,84 @@
             <img src="icons/app5.png" alt="App Icon">
             <h3>Project Management</h3>
             <p>Track and manage projects.</p>
+        </div> -->
+             
+        <div class="app-card">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/excel_48x1.svg"
+                width="48"
+                height="48"
+                alt="Excel icon"
+              />
+                <h3>Excel</h3>
+                <p>Create, edit, and manage spreadsheets.</p>
+            </a>
         </div>
         <div class="app-card">
-            <img src="icons/app6.png" alt="App Icon">
-            <h3>Employee Directory</h3>
-            <p>Find and connect with colleagues.</p>
+            <a href="https://www.microsoft.com/en-us/microsoft-365/onedrive" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/onedrive_48x1.svg"
+                width="48"
+                height="48"
+                alt="OneDrive icon"
+              />
+                <h3>OneDrive</h3>
+                <p>Cloud storage for all your files.</p>
+            </a>
         </div>
+        <div class="app-card">
+            <a href="https://outlook.office.com" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/outlook_48x1.svg"
+                width="48"
+                height="48"
+                alt="Outlook icon"
+              />
+                <h3>Outlook</h3>
+                <p>Email and calendar management.</p>
+            </a>
+        </div>
+        <div class="app-card">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/powerpoint_48x1.svg"
+                width="48"
+                height="48"
+                alt="Powerpoint icon"
+              />
+                <h3>PowerPoint</h3>
+                <p>Create and present slideshows.</p>
+            </a>
+        </div>
+
+        <div class="app-card">
+            <a href="https://aviationlogisticsolutions.sharepoint.com/" target="_blank">
+                <img
+                src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/teams_48x1.svg"
+                width="48"
+                height="48"
+                alt="Teams icon"
+              />
+                <h3>Teams</h3>
+                <p>Chat, meet, and collaborate in one place.</p>
+            </a>
+        </div>
+        <div class="app-card">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank">
+                <img
+  src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/assets/brand-icons/product/svg/word_48x1.svg"
+  width="48"
+  height="48"
+  alt="Word product icon"
+/>
+                <h3>Word</h3>
+                <p>Create and edit text documents.</p>
+            </a>
+        </div>
+        
     </div>
+
 </section>
 
 <footer class="footer">
